@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.blok {
+  /* width: 500px;
+  height: 400px; */
+  background: transparent;
+  border: 2px solid rgba(255, 200, 71, 0.5);
+  backdrop-filter: blur(5px);
+  color: #fff;
+  border-radius: 100px;
+  padding: 10px 2px;
+  box-shadow: #fff;
+}
+.blok h1 {
+  font-size: 36px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.blok h1 span {
+  color: #f4ca35;
+}
+.blok .inputan {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  /* margin-bottom: 60px;
+    padding-bottom: 60px; */
+}
+
+.inputan input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  color: aliceblue;
+  padding: 20px 45px 20px 20px;
+}
+
+.inputan {
+  color: rgb(255, 255, 255);
+}
+
+.inputan select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  appearance: none; /* Menghilangkan default arrow pada beberapa browser */
+  background-image: linear-gradient(45deg, transparent 50%, #3498db 50%),
+    linear-gradient(135deg, #3498db 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 5px),
+    calc(100% - 15px) calc(1em + 5px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.inputan select:hover {
+  background-color: #e6f7ff; /* Warna latar belakang ketika hover */
+}
+
+.inputan select:focus {
+  outline: none;
+  border-color: #3498db;
+  background-color: #ffffff;
+}
+
+.button {
+  background-color: #d8b432;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 98%;
+  font-size: 16px;
+  margin-bottom: 10px; /* Spacing bawah */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 600px;
+  padding: 10px;
+}
+
+form div {
+  margin: 10px;
+}
+label {
+  display: block;
+}
+
+h3 {
+  text-align: center;
+  color: aliceblue;
+}
+
+#hamburger-menu {
+  display: inline-block;
+}
+.navbar .navbar-nav {
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  background-color: rgba(10, 10, 10, 0.559);
+  width: 30rem;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav.active {
+  left: 0;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: block;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.navbar .navbar-nav a::after {
+  transform-origin: 0 0;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.2);
+}
+
+.about .row {
+  flex-wrap: wrap;
+}
+
+.about .row .about-img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about .row .content {
+  padding: 0;
+}
+
+.about .row .content p h3 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .navbar .search {
+    width: 50%;
+    right: 2rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

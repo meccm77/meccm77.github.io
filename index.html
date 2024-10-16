@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Operator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="blok">
+      <form
+        action=""
+        method="post"
+        autocomplete="off"
+        onsubmit="event.preventDefault(); testClick();"
+      >
+        <h1>Welcome to <span>"Meccm"</span> Kalkulator</h1>
+        <div class="inputan">
+          <label for="num1">Masukkan Angka Pertama:</label>
+          <input type="text" id="num1" required />
+        </div>
+        <div class="inputan">
+          <!-- <label for="operator">Pilih Operator:</label> -->
+          <select
+            id="operator"
+            class="inputan"
+            required
+            aria-placeholder="Pilih Operator"
+          >
+            <option value="tambah">+</option>
+            <option value="kurang">-</option>
+            <option value="kali">*</option>
+            <option value="bagi">/</option>
+          </select>
+        </div>
+        <br />
+        <div class="inputan">
+          <label for="num2">Masukkan Angka Kedua:</label>
+          <input type="text" id="num2" required />
+        </div>
+        <div class="button">
+          <input class="button" type="submit" value="Hitung" />
+        </div>
+
+        <h3>Hasil: <span id="result">0</span></h3>
+      </form>
+    </section>
+
+    <script src="scipt.js"></script>
+  </body>
+</html>
